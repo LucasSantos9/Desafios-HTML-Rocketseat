@@ -12,8 +12,8 @@
       <fieldset>
         <legend>Entre em contato</legend>
         <br />
-        <label><b>Assunto:</b></label>
-        <select>
+        <label for="assunto"><b>Assunto:</b></label>
+        <select id="assunto">
           <option value="suporte">Suporte</option>
           <option value="reclamacao">Reclamação</option>
           <option value="sugestao">Sugestão</option>
@@ -21,15 +21,29 @@
         <br />
         <br />
 
-        <label> <b>Nome Completo:</b></label>
+        <label for="name"> <b>Nome Completo:</b></label>
         <br />
-        <input id="" type="text" placeholder="Seu Nome" />
+        <input id="name" type="text" placeholder="Seu Nome" />
         <br />
         <br />
 
         <label><b>Email:</b></label>
         <br />
-        <input id="" type="text" placeholder="email@seudominio.com" />
+        <input id="" type="email" placeholder="email@seudominio.com" />
+        <br />
+        <br />
+
+        <label for="message"><b>Mensagem:</b></label>
+        <br />
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <br />
+        <br />
+
+        <input type="checkbox" value="" /> Aceito receber novidades pelo email
+        <br />
+        <br />
+
+        <button>Enviar</button>
       </fieldset>
     </form>
   </body>
